@@ -9,10 +9,8 @@ import requests
 import json
 import random
 from datetime import datetime
-from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app)
 
 UPLOAD_FOLDER = "uploads"
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)  # Cria a pasta se não existir
